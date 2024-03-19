@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing MOTORS</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+        <h1>Racing Motors</h1>
+        <div class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+
+        </div>
+    </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Em destaque</a>
+                    </li>
+                    <li>
+                        <a href="#">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="img-carrossel">
+        <img src="./images/slide1.png" alt="um carro da marca porsche">
+        <img src="./images/slide2.png" alt="um carro da marca bmw">
+        <img src="./images/slide3.png" alt="um carro da ford">
+    </div>
+
+    <section id="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="./images/loja.jpg" alt="imagem da loja ">
+            <div>
+                <h2>Sobre a Racing Motors</h2>
+                <p>A Racing Motors surgiu em 2006 com o intuito de renovar a visão do público quando o assunto é automóveis!
+                    Nós somos uma loja que prestamos todo tipo de serviço relacionado a veículos, desde reparos, remapeamentos, até
+                    mesmo a venda.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="fix">
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./images/carro-bmw.png" alt="carro bmw">
+                    <h3>BMW Z4</h3>
+                    <p>
+                        BMW Z4, possui câmbio automática de 7 marchas, 461CV de potência e 56,2Kg de torque!
+                    </p>
+                        <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/fusca.png" alt="carro fusca">
+                    <h3>Fusca 1973</h3>
+                    <p>
+                        Volkswagen Fusca, 1973, possui câmbio manual de 5 marchas, 61CV de potência e 12,2Kg de torque!
+                    </p>
+                    <strong>R$ 15.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/moto-bmw.png" alt="moto bmw">
+                    <h3>BMW S1300RR</h3>
+                    <p>
+                        BMW S1000RR, possui 121CV de potência e 16,2Kg de torque!
+                    </p>
+                    <strong>R$ 40.000,00</strong>
+                    <button id="moto-button" type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./images/carro-bmw.png" alt="carro bmw">
+                    <h3>BMW Z4</h3>
+                    <p>
+                        BMW Z4, possui câmbio automática de 7 marchas, 461CV de potência e 56,2Kg de torque!
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000,00</del>
+                        <strong>R$ 75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/fusca.png" alt="carro fusca">
+                    <h3>Fusca 1973</h3>
+                    <p>
+                        Volkswagen Fusca, 1973, possui câmbio manual de 5 marchas, 61CV de potência e 12,2Kg de torque!
+                    </p>
+                    <div class="price">
+                        <del>R$ 22.000,00</del>
+                    <strong>R$ 15.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/moto-bmw.png" alt="moto bmw">
+                    <h3>BMW S1300RR</h3>
+                    <p>
+                        BMW S1000RR, possui 121CV de potência e 16,2Kg de torque!
+                    </p>
+                    <div class="price">
+                        <del> R$ 50.000,00</del>
+                    <strong>R$ 40.000,00</strong>
+                    </div>
+                    <button id="moto-button" type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>  
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Veículo de interesse:</label>
+                    <input type="text" id="veiculo-interesse" name="veiculoInteresse">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2024 &copy; Racing MOTORS - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    
+    
+</body>
+</html>
